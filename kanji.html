@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function getCompoundIntrest()
+    { 
+        var amount = 500;
+        var rate = 2;
+        var year = 1;
+        var m = 4;
+            
+            i = parseFloat(rate / m) ;
+            console.log("i"+i)
+            p = parseInt( m * year);
+            console.log("p" +p)
+            j = parseFloat(1 + i);
+           console.log("j" + j)
+        k = parseFloat(Math.pow(j, p));
+       console.log("k"+k)
+        result = parseFloat(amount * j);
+        console.log(result)
+        console.log(typeof i,j,k,p)
+    }
+    getCompoundIntrest();
+    </script>
+</body>
+</html>
