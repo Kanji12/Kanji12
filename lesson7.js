@@ -3,7 +3,7 @@ var http = require('http');
 var server = http.createServer(function (request, responce) {
     var CurrentURL = request.url;
     console.log(CurrentURL);
-    responce.writeHead(200, { 'content-type': 'text/html' });
+    responce.writeHead(200, { 'content-type': 'text/html' }); 
     if (CurrentURL == "/") {
         responce.writeHead("<html><head></head><body><h1>Home</h1></body></html>")
     }
